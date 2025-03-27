@@ -1,81 +1,113 @@
-#!/bin/bash
+# Pengenalan Git
 
-# Nama file README
+Git adalah sistem kontrol versi terdistribusi yang memungkinkan developer melacak perubahan kode, berkolaborasi dengan tim, dan mengelola berbagai versi kode dengan efisien.
 
-README_FILE="README.md"
+## Fitur Utama Git
 
-# Membuat atau menimpa file README.md
+- Pelacakan versi
+- Branching dan merging
+- Kolaborasi tim
+- Backup kode
 
-cat <<EOL > $README_FILE
+---
 
-# Nama Proyek
+## Format Markdown Dasar
 
-## Deskripsi Proyek
+### 1. Header
 
-Deskripsikan proyek Anda di sini. Jelaskan tujuan, fitur utama, dan teknologi yang digunakan.
+# Header 1
 
-## Persyaratan
+## Header 2
 
-Daftar persyaratan yang diperlukan untuk menjalankan proyek ini:
+### Header 3
 
-- Node.js
-- npm
-- Browser modern
+### 2. Penekanan Teks
 
-## Instalasi
+**Teks tebal**  
+_Teks miring_  
+~~Teks dicoret~~
 
-Langkah-langkah untuk menginstal dan menjalankan proyek ini secara lokal:
+### 3. List
 
-1. **Klon Repositori:**
-   \`\`\`bash
-   git clone https://github.com/username/nama-proyek.git
-   cd nama-proyek
-   \`\`\`
+- Item tidak berurut 1
+- Item tidak berurut 2
+  - Sub-item 2.1
+  - Sub-item 2.2
 
-2. **Instalasi Dependensi:**
-   \`\`\`bash
-   npm install
-   \`\`\`
+1. Item berurut 1
+2. Item berurut 2
+   1. Sub-item 2.1
+   2. Sub-item 2.2
 
-3. **Menjalankan Proyek:**
-   \`\`\`bash
-   npm start
-   \`\`\`
+### 4. Link dan Gambar
 
-## Penggunaan
+[Teks link](https://www.contoh.com)  
+![Teks alt gambar](url-gambar.jpg)
 
-Berikan contoh penggunaan proyek Anda di sini. Jelaskan bagaimana pengguna dapat memanfaatkan fitur-fitur yang ada.
+### 5. Kode
 
-## Kontribusi
+`kode inline`
 
-Kami menyambut kontribusi dari siapa pun. Untuk berkontribusi, ikuti langkah-langkah berikut:
+```python
+def hello_world():
+    print("Hello, World!")
+```
 
-1. **Fork Repositori**
-2. **Buat Branch Fitur:**
-   \`\`\`bash
-   git checkout -b fitur-anda
-   \`\`\`
+### 6. Tabel
 
-3. **Commit Perubahan:**
-   \`\`\`bash
-   git commit -m "Menambahkan fitur X"
-   \`\`\`
+| Kolom 1 | Kolom 2 |
+| ------- | ------- |
+| Data 1  | Data 2  |
+| Data 3  | Data 4  |
 
-4. **Push ke Branch:**
-   \`\`\`bash
-   git push origin fitur-anda
-   \`\`\`
+### 7. Blockquote
 
-5. **Buat Pull Request**
+> Ini adalah blockquote  
+> Bisa multiple baris
 
-## Lisensi
+---
 
-Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
+## Fitur Tambahan Markdown
 
-## Kontak
+### 8. Garis Horizontal
 
-Jika Anda memiliki pertanyaan, silakan hubungi [email@example.com](mailto:email@example.com).
+---
 
-EOL
+atau
 
-echo "README.md telah dibuat."
+---
+
+atau
+
+---
+
+### 9. Checkbox / Task List
+
+- [x] Tugas selesai
+- [ ] Tugas belum selesai
+
+### 10. Mention & Hashtag _(GitHub Flavored Markdown)_
+
+@user123 tolong cek PR ini.  
+Issue yang berkaitan: #45
+
+### 11. Emoji
+
+:smile: :rocket: :fire:
+
+### 12. Superscript dan Subscript
+
+Teks superscript: 10^2^  
+Teks subscript: H~2~O
+
+### 13. Escaping Karakter
+
+\*Teks ini tidak miring atau tebal\*
+
+### 14. Menyisipkan HTML
+
+<center><b>Teks ini di tengah dan tebal</b></center>
+
+---
+
+**Selamat mencoba Markdown!** 🚀
